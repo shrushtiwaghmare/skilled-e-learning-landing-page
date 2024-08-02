@@ -1,0 +1,365 @@
+body {
+  font-family: plus jakarta sans;
+  margin: 0;
+  background-color: rgb(245, 245, 250);
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 8.4375rem;
+}
+
+.skilled {
+  font-size: 1.25rem;
+  color: rgb(27, 27, 49);
+  font-weight: 700;
+}
+
+.button {
+  background-color: rgb(27, 27, 49);
+  color: white;
+  border-radius: 1.25rem;
+  border: 0;
+  padding: 0.7rem 1.25rem;
+  position: sticky;
+  cursor: pointer;
+}
+
+.coloured-button {
+  background-image: linear-gradient(rgb(249, 132, 54), rgb(249, 51, 167));
+  border-radius: 1.25rem;
+  height: 2.5rem;
+  width: 6.26rem;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+
+.title-and-description {
+  max-width: 25rem;
+  margin: 8.437rem;
+}
+
+.heading {
+  display: flex;
+  color: rgb(27, 27, 49);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.desktop-img {
+  width: 37.5rem;
+  position: relative;
+  left: 9.0625rem;
+  bottom: 3.625rem;
+}
+
+.img-container {
+  overflow: hidden;
+}
+
+.png-img {
+  width: 20rem;
+  display: none;
+}
+
+.card {
+  height: 16.25rem;
+  border-radius: 0.625rem;
+  background-color: white;
+  box-shadow: 0.125rem 0.1875rem 0.3125rem rgb(221, 221, 246);
+  padding: 1.25rem;
+
+  p {
+    color: gray;
+    height: 3.125rem;
+  }
+}
+
+.coloured-card {
+  background-image: linear-gradient(rgb(249, 132, 54), rgb(249, 51, 167));
+  color: white;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 11.25rem;
+}
+
+.icon {
+  height: 2.8125rem;
+  position: relative;
+  right: -0.3125rem;
+  top: -2.5rem;
+}
+
+.sub-headings {
+  color: rgb(23, 23, 48);
+}
+
+.link {
+  color: rgb(248, 21, 93);
+  cursor: pointer;
+  position: relative;
+  top: 3.75rem;
+}
+
+.cards-container {
+  margin: 1.875rem 8.25rem 6.25rem 8.25rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 16.666667%;
+  max-width: 16.666667%;
+  box-sizing: border-box;
+  padding: 1.5625rem 0.9375rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.375rem;
+  background-color: rgb(27, 27, 49);
+}
+
+.last-skilled {
+  color: white;
+  font-size: 1.25rem;
+  margin-left: 8.437rem;
+}
+
+.last-button {
+  background-image: linear-gradient(rgb(80, 64, 200), rgb(232, 26, 198));
+  color: white;
+  border-radius: 1.25rem;
+  border: 0;
+  cursor: pointer;
+  padding: 0.625rem 1.25rem;
+  margin-right: 8.437rem;
+}
+
+@media (max-width: 1920px) {
+  .col {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .desktop-img {
+    left: 6.25rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-bar {
+    margin: 1rem 5.9375rem;
+  }
+
+  .title-and-description {
+    max-width: 18.75rem;
+    margin: 8.4375rem 5.9375rem;
+  }
+
+  .desktop-img {
+    left: 3.125rem;
+  }
+
+  .cards-container {
+    margin: 4.375rem;
+  }
+
+  .last-button {
+    margin-right: 5.9375rem;
+  }
+
+  .last-skilled {
+    margin-left: 5.9375rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .nav-bar {
+    margin: 1rem 3.75rem;
+  }
+
+  .title-and-description {
+    margin: 8.4375rem 3.75rem;
+  }
+
+  .desktop-img {
+    left: 0.625rem;
+  }
+
+  .cards-container {
+    margin: 4.375rem 2.5rem;
+  }
+
+  .last-button {
+    margin-right: 3.75rem;
+  }
+
+  .last-skilled {
+    margin-left: 3.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    margin: 1rem 2.5rem;
+  }
+
+  .title-and-description {
+    margin: 2.5rem;
+  }
+
+  .png-img {
+    display: none;
+  }
+
+  .desktop-img {
+    left: 0rem;
+    bottom: 6.875rem;
+  }
+
+  .img-container {
+    height: 25rem;
+  }
+
+  .cards-container {
+    margin: 4.375rem 1.25rem;
+  }
+
+  .last-button {
+    margin-right: 2.5rem;
+  }
+
+  .last-skilled {
+    margin-left: 2.5rem;
+  }
+
+  .style-md {
+    color: navy;
+    background-color: red;
+  }
+
+  .col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .heading {
+    flex-direction: column;
+  }
+
+  .png-img {
+    display: block;
+    width: 28.125rem;
+  }
+
+  .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .desktop-img {
+    display: none;
+  }
+
+  .style-sm {
+    color: brown;
+    background-color: black;
+  }
+
+  .intro {
+    height: 3.75rem;
+  }
+
+  .coloured-card {
+    height: 6.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-bar {
+    margin: 1rem;
+  }
+
+  .title-and-description {
+    margin: 0.9375rem;
+  }
+
+  .cards-container {
+    margin: 6.25rem 0rem;
+  }
+
+  .last-button {
+    margin-right: 0.9375rem;
+  }
+
+  .last-skilled {
+    margin-left: 0.9375rem;
+  }
+
+  .style-xs {
+    color: blue;
+    background-color: green;
+  }
+
+  .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .png-img {
+    width: 20rem;
+  }
+
+  .intro {
+    height: 3.75rem;
+  }
+
+  .img-container {
+    height: 17.5rem;
+  }
+
+  .coloured-card {
+    height: 6.25rem;
+  }
+}
+
+/* Breakpoints */
+/* 480px, 600px, 768px, 1024px, and 1280px */
+
+/* Row col */
+/* 768px and above - 3 card */
+/* 600 and 1024 - 2 card */
+/* below 600 - 1 card */
+
+/* TODO */
+/* 
+1. vertically align center in 1st card.
+2. adjust margin of cards container acc to screen size.
+3. Get started should stick to bottom of the card.
+4. Description text in card should have fixed height, fix overflow.
+5. Give margin bottom to cards.
+6. remove unwanted CSS
+*/
+
+/* 
+July 19th
+TODO
+1. make footer fixed to bottom
+*/
